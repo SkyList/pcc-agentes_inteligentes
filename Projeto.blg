@@ -1,0 +1,21 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: Projeto.aux
+A level-1 auxiliary file: pre_textuais.aux
+A level-1 auxiliary file: c_introducao.aux
+A level-1 auxiliary file: c_referencial.aux
+A level-1 auxiliary file: c_metodologia.aux
+A level-1 auxiliary file: c_resultados.aux
+A level-1 auxiliary file: c_conclusao.aux
+The style file: abntex2-alf.bst
+Database file #1: abntex2-options.bib
+Database file #2: bibliografia.bib
+I was expecting a `,' or a `}'---line 162 of file bibliografia.bib
+ :  
+ :  type={Mestrado em Engenharia Mineral},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.7           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://www.abntex.net.br/                               |
++---------------------------------------------------------+
+(There was 1 error message)
