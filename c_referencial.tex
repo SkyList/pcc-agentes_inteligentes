@@ -7,14 +7,52 @@
 
 \section{Agentes inteligentes}
 
-A globalização tem feito com que as organizações se coloquem em uma nova posição competitiva, onde o conhecimento e o comportamento dos seus colaboradores têm possibilitado vantagens competitivas. 
+Para Fernandes \cite{fernandes2003agentes}, a definição de agente depende do ponto de vista do autor e também da funcionalidade desse agente. Um agente pode ser um programa de computador, entretanto, não precisa necessariamente apresentar comportamento “inteligente”, termo que é alvo de muitas controvérsias, já que é difícil definir o que é realmente um comportamento inteligente.  
 
-Para METAXIOTIS, 2004, a Inteligência Artificial tem recebido atenção durante as duas últimas décadas e tem sido amplamente aplicada em muitas áreas de negócio. As principais categorias analisadas são: Sistemas Especialistas (SE), Redes Neurais Artificiais (RNA) e Agentes Inteligentes (AI). 
+Segundo Russele Norvig \cite{russell2016artificial}, um agente é aquele que percebe o seu ambiente por meio de sensores e age sobre ele através dos atuadores. Em um agente robótico, os sensores poderiam ser câmeras de filmagem e detectores de faixa de infravermelho. Já os atuadores podem ser representados pelos motores e braços mecânicos 
 
-\section{Sistemas Especialistas}
+De acordo com Metaxiotis \cite{metaxiotis2004decision}, a Inteligência Artificial tem recebido atenção durante as duas últimas décadas e tem sido amplamente aplicada em muitas áreas de negócio. As principais categorias analisadas são: Sistemas Especialistas (SE), Redes Neurais Artificiais (RNA) e Agentes Inteligentes (AI). 
 
-Considera-se que os sistemas especialistas surgiram, provavelmente, como uma área da Inteligência Artificial (IA) durante a década de 70, a partir do esforço de pesquisadores para desenvolver programas computacionais que pudessem raciocinar como humanos. Segundo WELBANK, 1983, um sistema especialista é um programa de computador que tem uma base de conhecimento sobre um domínio e utiliza o raciocínio para executar tarefas que especialistas humanos poderiam executar. 
+\subsection{Sistemas Especialistas}
+Considera-se que os sistemas especialistas surgiram, provavelmente, como uma área da Inteligência Artificial (IA) durante a década de 70, a partir do esforço de pesquisadores para desenvolver programas computacionais que pudessem raciocinar como humanos. Segundo WELBANK, 1983, um sistema especialista é um programa de computador que tem uma base de conhecimento sobre um domínio e utiliza o raciocínio para executar tarefas que especialistas humanos poderiam executar. Ou seja, um sistema especialista é um sistema computacional que possui um corpo de conhecimento bastante organizado e tem como objetivo solucionar problemas do mundo real que envolvam habilidades de especialistas em um domínio específico. 
+
+As características para a interação do sistema especialista com o usuário, destaca-se as seguintes (RICH, 1994; KNIGHT, 1994): 
+\begin{itemize}
+	\item Explicar seu raciocínio. Para convencer o usuário de que a solução apresentada é adequada ao problema, é necessário que o sistema descreva de forma clara e precisa o raciocínio utilizado que o levou àqueles resultados. 
+	
+	\item Adquirir conhecimento novo e modificar o conhecimento antigo. Um especialista humano está sempre atento a novas informações que o levem a modificar seu conhecimento ou mesmo complementá-lo. Da mesma forma, um sistema especialista deve manter sempre atualizadas suas bases de conhecimento. 
+	
+	\item Manter interações contínuas entre o especialista humano e o sistema especialista. Uma outra maneira é submeter os mesmos dados brutos utilizados pelo especialista humano e permitir que o sistema especialista aprenda com ele. 
+	
+\end{itemize}
+
+Para Santos e Carvalho, outra característica comum nos sistemas especialistas é a existência de um mecanismo de raciocínio incerto que permita representar a incerteza a respeito do conhecimento do domínio. Devido à necessidade de expressar o conhecimento incerto, ocorreu o desenvolvimento de diversos métodos de representação do conhecimento: 
+
+\begin{itemize}
+	\item Lógica: base para a maioria dos formalismos de representação de conhecimento, seja de forma explícita, como nos sistemas especialistas baseados na linguagem Prolog, seja mascarada na forma de representações específicas que podem facilmente ser interpretadas como proposições ou predicados lógicos. 
+	
+	\item Redes semânticas: consiste em um conjunto de nós conectados por um conjunto de arcos. Os nós, em geral, representam objetos e os arcos, relações binárias entre esses objetos. Mas, os nós podem também ser utilizados para representar predicados, classes, palavras de uma linguagem, entre outras possíveis interpretações, dependendo do sistema de redes semânticas adotado. 
+	
+	\item Quadros ou frames: permitem a expressão das estruturas internas dos objetos, mantendo a possibilidade de representar herança de propriedades como nas redes semânticas.
+\end{itemize}
+
+
+\subsection{Redes Neurais Artificiais}
+As Redes Neurais Artificiais (RNA) foram desenvolvidas, originalmente, na década de 40, pelo neurofisiologista Warren McCulloch, do MIT, e pelo matemático Walter Pitts, da Universidade de Illinois. Eles foram os primeiros pesquisadores a tratar o cérebro como um “organismo computacional” \cite{medeiros1999}.  
+
+Segundo Santos e Carvalho, o aprendizado das redes neurais ocorre quando há modificações significantes nas sinapses entre neurônios. Uma sinapse é o nome dado à conexão existente entre neurônios. Nestas conexões são atribuídos valores, chamados de pesos sinápticos, que são usados para armazenar o conhecimento. Para determinar se uma modificação é significante, verifica-se a ativação dos neurônios. Se determinadas conexões são mais usadas, então estas conexões são reforçadas enquanto que as demais são enfraquecidas.  
+
+\begin{itemize}
+	\item Supervisionado: são sucessivamente apresentadas à rede, conjuntos de padrões de entrada e seus correspondentes padrões de saída. A rede ajusta os pesos das conexões entre os elementos de processamento (‘neurônio’), até que o erro entre os padrões de saída gerados pela rede alcance um valor mínimo definido previamente;
+	
+	\item Reforço: ao invés de fornecer as saídas corretas para a rede relativas ao treinamento individual, a rede recebe um valor que diz se a saída está correta ou não;
+	
+	\item Não-supervisionado: a rede analisa os conjuntos de dados de entrada, determina algumas propriedades do conjunto de dados e aprende a refletir estas propriedades na sua saída; 
+\end{itemize}
+
+\section{Extração de conhecimento}
+O processo de extração do conhecimento, também conhecido como knowledge-discovery(KDD), é um conjunto de atividades contínuas que compartilham o conhecimento descoberto a partir de bases de dados. Segundo Fayyad et al. (1996), esse conjunto é composto de cinco etapas: seleção dos dados; pré-processamento e limpeza dos dados; transformação dos dados; Mineração de Dados (Data Mining); e interpretação e avaliação dos resultados. 
 
 \section{Portal da Transparência}
 
-A temática transparência na gestão pública vem ganhando destaque nos últimos anos, sendo o acesso à informação reconhecido por importantes organismos da comunidade internacional como direito humano fundamental (CGU, 2013). 
+A temática transparência na gestão pública vem ganhando destaque nos últimos anos, sendo o acesso à informação reconhecido por importantes organismos da comunidade internacional como direito humano fundamental \cite{guiaTransparencia2013}. 
